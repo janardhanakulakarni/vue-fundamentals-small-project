@@ -1,0 +1,59 @@
+#bag{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url(/img/bag.png) center no-repeat;
+    background-size: 80%;
+    background-position: right bottom, left top;
+    padding-top: 0px;
+}
+#b{
+    background-image: url(/img/dp.jpg);
+}
+
+#bag.brust{
+    background: url(/img/bag-burst.png);
+    background-color: dimgrey;
+    
+}
+
+
+#bag-health{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+}
+
+#bag-health div{
+    height: 20px;
+    background: rgb(4, 1, 29)
+}
+
+#controls{
+    width: 120px;
+    margin: 0 auto;
+}
+.a{
+    color: rgb(56, 25, 194);
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    padding-bottom: 0px;
+}
+.button {
+    transition-duration: 0.4s;
+  }
+  
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }  
