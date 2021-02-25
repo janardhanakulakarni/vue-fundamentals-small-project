@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>VurJs small game</title>
+    <link rel="stylesheet" href="one.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  </head>
+  <body id="aaa">
+    <div id="vue-app">
+            <!-- bag image -->
+            <h1 class="head">Punching Bag Simple Game</h1>
+            <div id="bag" v-bind:class="{ burst:ended }"></div>
+            <h4 class="head">{{ s }}</h4>
+
+            <!-- bag health bar -->
+            <div id="bag-health">
+                <div v-bind:style="{width:health + '%' }"></div>
+            </div>
+
+            <!-- game control buttons -->
+            <div id="controls">
+                <button v-on:click="punch" v-show="!ended" class="btn btn-warning">Punch</button><br><br>
+                <button v-on:click="restart" class="btn btn-primary">Restart</button>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="filejs.js"></script>
+  </body>
+</html>
