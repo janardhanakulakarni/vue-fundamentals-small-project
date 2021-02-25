@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            vue project
+        </title>
+        <link rel="stylesheet" href="one.css">
+    </head>
+    <body id="b">
+        <div id="vue-app">
+            <h1 class="a">Punching Bag Game</h1>
+            <div id="bag" v-bind:class="{ brust:ended }"></div>
+            <div id="bag-health">
+                <div v-bind:style="{width:health + '%'}"></div>
+            </div>
+            <div id="controls">
+                <button v-on:click="punch" v-show="!ended" class="button2 button2" >punch </button>
+                <button v-on:click="restart"  class="button button" >restart</button>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue"></script>
+        <script src="text.js"></script>
+    </body>
+</html>
